@@ -1,0 +1,64 @@
+
+
+Sun Feb 27 13:26:33 2022
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.13.0-30-generic (#33-Ubuntu SMP Fri Feb 4 17:03:31 UTC 2022) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.46.3, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+User is not root!
+Hard disk list
+
+
+TestDisk exited normally.
+Using locale 'LC_CTYPE=en_US.UTF-8;LC_NUMERIC=ru_UA.UTF-8;LC_TIME=ru_UA.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=ru_UA.UTF-8;LC_MESSAGES=en_US.UTF-8;LC_PAPER=ru_UA.UTF-8;LC_NAME=ru_UA.UTF-8;LC_ADDRESS=ru_UA.UTF-8;LC_TELEPHONE=ru_UA.UTF-8;LC_MEASUREMENT=ru_UA.UTF-8;LC_IDENTIFICATION=ru_UA.UTF-8'.
+
+
+Sun Feb 27 13:26:33 2022
+Command line: TestDisk /debug
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.13.0-30-generic (#33-Ubuntu SMP Fri Feb 4 17:03:31 UTC 2022) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.46.3, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       250069680 sectors
+/dev/sda: user_max   250069680 sectors
+/dev/sda: native_max 250069680 sectors
+/dev/sda: dco        250069680 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop22 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 128 GB / 119 GiB - CHS 15566 255 63, sector size=512 - HFS128G32TNF-N3A0A, S/N:MJ8AN55331170AI0A, FW:70000P10
+Disk /dev/loop0 - 4096 B - 8 sectors (RO), sector size=512
+Disk /dev/loop1 - 141 MB / 134 MiB - 275976 sectors (RO), sector size=512
+Disk /dev/loop10 - 172 MB / 164 MiB - 337424 sectors (RO), sector size=512
+Disk /dev/loop11 - 68 MB / 65 MiB - 133552 sectors (RO), sector size=512
+Disk /dev/loop12 - 122 MB / 117 MiB - 240032 sectors (RO), sector size=512
+Disk /dev/loop13 - 226 MB / 215 MiB - 442016 sectors (RO), sector size=512
+Disk /dev/loop14 - 162 MB / 154 MiB - 317336 sectors (RO), sector size=512
+Disk /dev/loop15 - 58 MB / 55 MiB - 113680 sectors (RO), sector size=512
+Disk /dev/loop16 - 260 MB / 248 MiB - 509456 sectors (RO), sector size=512
+Disk /dev/loop17 - 122 MB / 116 MiB - 238680 sectors (RO), sector size=512
+Disk /dev/loop18 - 56 MB / 54 MiB - 111048 sectors (RO), sector size=512
+Disk /dev/loop19 - 108 MB / 103 MiB - 212720 sectors (RO), sector size=512
+Disk /dev/loop2 - 162 MB / 154 MiB - 317336 sectors (RO), sector size=512
+Disk /dev/loop20 - 64 MB / 61 MiB - 126792 sectors (RO), sector size=512
+Disk /dev/loop21 - 141 MB / 134 MiB - 276304 sectors (RO), sector size=512
+Disk /dev/loop3 - 116 MB / 110 MiB - 226912 sectors (RO), sector size=512
+Disk /dev/loop4 - 222 MB / 212 MiB - 434448 sectors (RO), sector size=512
+Disk /dev/loop5 - 259 MB / 247 MiB - 507712 sectors (RO), sector size=512
+Disk /dev/loop6 - 141 MB / 135 MiB - 276672 sectors (RO), sector size=512
+Disk /dev/loop7 - 64 MB / 61 MiB - 126752 sectors (RO), sector size=512
+Disk /dev/loop8 - 56 MB / 54 MiB - 111080 sectors (RO), sector size=512
+Disk /dev/loop9 - 159 MB / 152 MiB - 311600 sectors (RO), sector size=512
+
+Partition table type defaults to Intel
+Media is opened in read-only.
+
+TestDisk exited normally.
