@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProjectsController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ Route::prefix('admin')->group(function(){
     Route::get('/', [BannerController::class, 'index']);
     Route::get('/addBanner', [BannerController::class, 'addBanner']);
     Route::get('/addProject', [ProjectsController::class, 'index']);
+    Route::get('/addNews', [NewsController::class, 'index']);
     Route::prefix('/banner')->group(function(){
         Route::post('/add', [BannerController::class, 'add']);
         Route::post('/remove', [BannerController::class, 'remove']);
@@ -30,6 +32,12 @@ Route::prefix('admin')->group(function(){
         Route::post('/add', [ProjectsController::class, 'add']);
         Route::post('/remove', [ProjectsController::class, 'remove']);
         Route::post('/edit', [ProjectsController::class, 'edit']);
+    });
+    Route::prefix('/news')->group(function(){
+        Route::post('/getData', [NewsController::class, 'getData']);
+        Route::post('/add', [NewsController::class, 'add']);
+        Route::post('/remove', [NewsController::class, 'remove']);
+        Route::post('/edit', [NewsController::class, 'edit']);
     });
 });
 // Route::get('/login', function () {

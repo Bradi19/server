@@ -10,6 +10,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/admin/addProject') }}">Add project</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/admin/addNews') }}">Add News</a>
+                </li>
             </ul>
         </div>
 

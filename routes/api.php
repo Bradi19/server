@@ -5,6 +5,7 @@ use App\Http\Middleware\CheckAge;
 use App\Http\Resources\Projects as ResourcesProjects;
 use App\Http\Resources\UserResource;
 use App\Models\Banner;
+use App\Models\News;
 use App\Models\Projects;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,10 @@ Route::group(['middleware' => CheckAge::class],function () {
     });
     Route::get('/projects', function (Request $request) {
         $all = Projects::all();
+        return new ResourcesProjects($all);
+    });
+    Route::get('/news', function (Request $request) {
+        $all = News::all();
         return new ResourcesProjects($all);
     });
     Route::post('/projectOne', function(Request $request)
