@@ -26,7 +26,7 @@ Route::group(['middleware' => CheckAge::class],function () {
             return new UserResource(Banner::all());
     });
     Route::get('/projects', function (Request $request) {
-        $all = Projects::all();
+        $all = Projects::orderBy('created_at', 'DESC')->limit(6)->get();
         return new ResourcesProjects($all);
     });
     Route::get('/news', function (Request $request) {

@@ -10,6 +10,14 @@ use stdClass;
 
 class FormsController extends Controller
 {
+    public function subsCribed(Request $request)
+    {
+        if($request->method === "POST" && $request->has('subscribed')){
+            echo json_encode(['success' => true]);
+        }
+        echo json_encode(['success' => false]);
+
+    }
     public function checkForm(Request $request)
     {
         if ($request->has('token') && empty($request->input('token'))) {

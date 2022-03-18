@@ -148,13 +148,10 @@
 
                 (function(name) {
                     reader[i].onload = function(e) {
-                        console.log(document.getElementById(name));
                         document.getElementById(name).src = e.target.result;
                     };
                 })(name);
 
-
-                console.log(files[i]);
             }
         }
     }

@@ -151,7 +151,6 @@ form.addEventListener("submit", (es) => {
         data = new FormData(document.forms.dols),
         url = form.getAttribute("url"),
         status = document.querySelector(".status");
-    console.log(form);
     req.onreadystatechange = () => {
         if (req.readyState === 4) {
             status.innerHTML = req.statusText;
@@ -161,7 +160,6 @@ form.addEventListener("submit", (es) => {
                     window.location.reload();
                 }
             } else {
-                console.log(data);
             }
         }
     };
