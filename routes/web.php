@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProjectsController;
@@ -15,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/login', view('auth.login'));
+Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/admin/auth', [BannerController::class, 'autificate']);
 #::middleware(['auth'])->
-Route::prefix('admin')->group(function(){
+Route::middleware(['Auth'])->prefix('admin')->group(function(){
     Route::get('/', [BannerController::class, 'index']);
     Route::get('/addBanner', [BannerController::class, 'addBanner']);
     Route::get('/addProject', [ProjectsController::class, 'index']);
@@ -44,3 +47,7 @@ Route::prefix('admin')->group(function(){
 //     return view('login');
 // })->name('login');
 // Route::get('/login', [BannerController::class, 'index'])->name('login');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

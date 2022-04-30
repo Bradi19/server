@@ -145,6 +145,7 @@ if (close) {
     });
 }
 let form = document.querySelector("#forms");
+if(form){
 form.addEventListener("submit", (es) => {
     es.preventDefault();
     let req = getXmlHttp(),
@@ -170,3 +171,4 @@ form.addEventListener("submit", (es) => {
     // );
     req.send(data);
 });
+}
